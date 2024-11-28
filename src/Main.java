@@ -13,11 +13,12 @@ public class Main {
 
         int litersinbucket1 = 0;
         int litersinbucket2 = 0;
-        int spaceleftin1 = bucket1capacity-litersinbucket1;
-        int spaceleftin2 = bucket2capacity-litersinbucket2;
+
 
 
         while (litersinroom > 0 || litersinbucket1 > 0 || litersinbucket2 > 0) {
+            int spaceleftin1 = bucket1capacity-litersinbucket1;
+            int spaceleftin2 = bucket2capacity-litersinbucket2;
             System.out.println("The room is now filled with " + litersinroom + "! \nyou have to make it so the room has no water in it and clear the buckets too.");
             System.out.println("Bucket 1 has " + litersinbucket1 + " liters and has room for " + spaceleftin1 + " more liters");
             System.out.println("Bucket 2 has " + litersinbucket2 + " liters and has room for " + spaceleftin2 + " more liters");
@@ -49,8 +50,9 @@ public class Main {
                     }
                     if (spaceleftin2 > litersinbucket1) {
                         litersinbucket2 = litersinbucket2 + litersinbucket1;
+                        spaceleftin2 -= litersinbucket1;
                         litersinbucket1 = 0;
-                        spaceleftin2 = spaceleftin2 - litersinbucket1;
+
                     }
                 }
                 System.out.println("filled bucket 2 from bucket 1!");
