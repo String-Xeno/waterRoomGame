@@ -22,8 +22,8 @@ public class Main {
             System.out.println("Bucket 1 has " + litersinbucket1 + "and has room for " + spaceleftin1 + "more liters");
             System.out.println("Bucket 2 has " + litersinbucket2 + "and has room for " + spaceleftin2 + "more liters");
             System.out.println("\n\n Controls:\n 1.fill bucket 1 from the room");
-            System.out.println("fill bucket 2 from bucket 1");
-            System.out.println("clear bucket 2 to the garden");
+            System.out.println("2.fill bucket 2 from bucket 1");
+            System.out.println("3.clear bucket 2 to the garden");
             System.out.println("\n what are you gonna do?\n");
             char choice = input.next().charAt(0);
             //choice 1
