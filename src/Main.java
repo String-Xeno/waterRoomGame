@@ -19,9 +19,9 @@ public class Main {
 
         while (litersinroom > 0 || litersinbucket1 > 0 || litersinbucket2 > 0) {
             System.out.println("The room is now filled with " + litersinroom + "! \nyou have to make it so the room has no water in it and clear the buckets too.");
-            System.out.println("Bucket 1 has " + litersinbucket1 + "and has room for " + spaceleftin1 + "more liters");
-            System.out.println("Bucket 2 has " + litersinbucket2 + "and has room for " + spaceleftin2 + "more liters");
-            System.out.println("\n\n Controls:\n 1.fill bucket 1 from the room");
+            System.out.println("Bucket 1 has " + litersinbucket1 + " liters and has room for " + spaceleftin1 + " more liters");
+            System.out.println("Bucket 2 has " + litersinbucket2 + " liters and has room for " + spaceleftin2 + " more liters");
+            System.out.println("\n\n Controls:\n1.fill bucket 1 from the room");
             System.out.println("2.fill bucket 2 from bucket 1");
             System.out.println("3.clear bucket 2 to the garden");
             System.out.println("\n what are you gonna do?\n");
